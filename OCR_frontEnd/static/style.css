@@ -1,0 +1,28 @@
+
+
+
+.carousel-item img{
+    width: 100%;
+    height: 80vh;
+}
+
+
+.card img{
+    min-width: 20%;
+    max-height: 225px;
+}
+
+#myFile{
+    padding-left: 100px;
+}
+
+
+#signUpform{
+    width: 50%;
+}
+
+#stylefont{
+    font-family: 'Dancing Script', cursive;
+}
+
+
