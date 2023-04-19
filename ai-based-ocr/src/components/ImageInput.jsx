@@ -52,13 +52,13 @@ export const ImageInput = () => {
       {isLoading ? (
         <Loader />
       ) : (
-        <div>
+        <div className="border">
           <input type="file" onChange={handleImageChange} />
           {image && (
             <img src={image} width={150} height={150} alt="uploaded image" />
           )}
           <br />
-          <div>{res}</div>
+          <div className="text-primary">{res}</div>
         </div>
       )}
     </>
