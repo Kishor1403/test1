@@ -6,6 +6,7 @@ import {
   NavbarMenu,
   ServicesInfo,
   TeamInfo,
+  TextToOCRHandler,
   VideoUploadHandler,
 } from "./components";
 import logo from "./logo.svg";
@@ -16,8 +17,9 @@ function App() {
     <div className="App">
       <NavbarMenu />
       <HeroCarousel />
-      <FileUploadHandler />
-      <VideoUploadHandler />
+      {/* <FileUploadHandler /> */}
+      {/* <VideoUploadHandler /> */}
+      <TextToOCRHandler />
       <ServicesInfo />
       <TeamInfo />
       <Footer />

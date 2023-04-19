@@ -7,3 +7,4 @@ export { VideoUploadHandler } from "./VideoUploadHandler";
 export { ServicesInfo } from "./ServicesInfo";
 export { TeamInfo } from "./TeamInfo";
 export { Footer } from "./Footer";
+export { TextToOCRHandler } from "./TextToOCRHandler";
