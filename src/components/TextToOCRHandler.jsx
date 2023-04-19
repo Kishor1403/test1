@@ -37,7 +37,8 @@ export const TextToOCRHandler = () => {
     }
   };
   const textArea = useRef(null);
-  function downloadTextFile(textareaId) {
+
+  function downloadTextFile() {
     const textarea = textArea.current;
     const text = textarea.value;
 
@@ -57,16 +58,28 @@ export const TextToOCRHandler = () => {
     link.download = filename;
     link.click();
   }
+  
+  const handleReadAloud = (text) => {
+    if (!text) {
+      alert("Textarea is empty!");
+      return;
+    }
 
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "en-IN";
+    speechSynthesis.speak(utterance);
+  };
   useEffect(() => {
     setResultText(res);
   }, [res, setResultText]);
   return (
     <div className="container my-5 py-5 fw-2">
-      <h1 className="my-3 text-primary">
-        <span className="text-secondary">Extract </span>the text.
-      </h1>
-      <hr className="w-25 m-auto mb-5" />
+      <div className="text-center my-5">
+        <h1 data-aos="fade-up" data-aos-offset="200">
+          AI BASED <span className="text-primary">OCR</span>
+        </h1>
+        <hr className="w-25 m-auto" />
+      </div>
       <ul className="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
         <li
           className="nav-item"
@@ -149,7 +162,14 @@ export const TextToOCRHandler = () => {
         <div className=" text-center">
           <button
             type=""
-            className="btn btn-outline-primary px-4 my-3 mb-5"
+            className="btn btn-outline-danger px-4 my-3 mb-5"
+            onClick={() => handleReadAloud(resultText)}
+          >
+            Read Aloud !{" "}
+          </button>
+          <button
+            type=""
+            className="btn btn-primary px-4 my-3 mb-5 mx-3"
             onClick={downloadTextFile}
           >
             Download File!

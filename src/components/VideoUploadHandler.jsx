@@ -63,17 +63,7 @@ export const VideoUploadHandler = ({ sendFileToOCR, isLoading }) => {
       <div className="row">
         <div className="col-sm-12">
           <div>
-            <div className="row text-center my-4">
-              <h1
-                className=" text-center"
-                data-aos="fade-up"
-                data-aos-offset="200"
-              >
-                OR
-              </h1>
-              <hr className="w-25 m-auto" />
-            </div>
-            <div className="row text-center" data-aos="zoom-in-down">
+            <div className="row text-center mt-5" data-aos="zoom-in-down">
               <h2 className="mb-4" id="stylefont">
                 Click Image of your{" "}
                 <span className="text-primary">Documents</span>{" "}

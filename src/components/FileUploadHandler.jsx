@@ -21,20 +21,12 @@ export const FileUploadHandler = ({ isLoading, sendFileToOCR }) => {
   return (
     <>
       <div className="container ">
-        <div className="text-center my-5">
-          <h1 data-aos="fade-up" data-aos-offset="200">
-            AI BASED <span className="text-primary">OCR</span>
-          </h1>
-          <hr className="w-25 m-auto" />
-        </div>
-        <div className="row text-center" data-aos="zoom-in-down">
+        <div className="row text-center mt-5" data-aos="zoom-in-down">
           <h1 id="stylefont">
             Upload Your <span className="text-primary">file here</span>{" "}
           </h1>
 
           <p>Click on the "Choose File" button to upload a file: </p>
-
-          {/* <form action="/predict" method="POST"> */}
           <div>
             <label className="btn btn-primary hero-btn py-3 w-50">
               Choose File
@@ -52,7 +44,6 @@ export const FileUploadHandler = ({ isLoading, sendFileToOCR }) => {
               src={image}
               className="border p-3 rounded container"
               width={100}
-              // height={100}
               alt="uploaded image"
             />
           )}
@@ -71,7 +62,6 @@ export const FileUploadHandler = ({ isLoading, sendFileToOCR }) => {
               </button>
             </div>
           )}
-          {/* </form> */}
         </div>
       </div>
     </>

@@ -1,5 +1,3 @@
-export { ImageInput } from "./ImageInput";
-export { Loader } from "./Loader";
 export { NavbarMenu } from "./NavbarMenu";
 export { HeroCarousel } from "./HeroCarousel";
 export { FileUploadHandler } from "./FileUploadHandler";
