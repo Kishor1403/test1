@@ -58,7 +58,7 @@ export const TextToOCRHandler = () => {
     link.download = filename;
     link.click();
   }
-  
+
   const handleReadAloud = (text) => {
     if (!text) {
       alert("Textarea is empty!");
