@@ -69,7 +69,7 @@ export const FileUploadHandler = () => {
             Upload Your <span className="text-primary">file here</span>{" "}
           </h1>
 
-          <p>Click on the "Choose File" button to upload a file:</p>
+          <p>Click on the "Choose File" button to upload a file: </p>
 
           <form action="/predict" method="POST">
             <input
